@@ -1,4 +1,100 @@
-.nav-link :hover,
-.nav-link :focus {
-  color: #2196f3;
+:root {
+  --text-color: #757575;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --adress-color: rgba(255, 255, 255, 0.6);
+}
+h1 {
+  color: #ffffff;
+}
+.page {
+  color: var(--text-color);
+}
+.logo {
+  color: #000000;
+}
+.color-logo {
+  color: var(--accent-color);
+}
+.color-logo-footer {
+  color: #ffffff;
+}
+ul {
+  list-style: none;
+}
+.site-nav .link {
+  color: var(--title-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.contacts .link {
+  color: var(--text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+.header {
+  background: #2f303a;
+}
+.button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.features-title,
+.features-subtitle {
+  color: var(--title-color);
+}
+/* Чем мы занимаемся */
+.preview-title {
+  color: var(--title-color);
+}
+/* Наша команда */
+.team {
+  background: #f5f4fa;
+}
+.team-list {
+  background: #ffffff;
+}
+.team-subtitle,
+.team-title {
+  color: var(--title-color);
+}
+/* Подвал */
+.address {
+  font-style: normal;
+}
+.address .address-nav {
+  color: #ffffff;
+}
+.address .link {
+  color: var(--text-color);
+}
+footer {
+  background: #2f303a;
+}
+/* страница портфолио */
+
+/* кнопки фильтра */
+.filters .button {
+  color: var(--title-color);
+  background: #f5f4fa;
+}
+.filters .button:hover,
+.filters .button:focus,
+.filters .button:active {
+  color: #ffffff;
+  background: var(--accent-color);
+}
+
+/* разделы портфолио*/
+.portfolio .portfolio-title {
+  color: var(--title-color);
+}
+
+.portfolio .portfolio-text {
+  color: var(--text-color);
 }
