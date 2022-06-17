@@ -8,6 +8,9 @@
   --background-button: #f5f4fa;
   --button-hover-color: #188ce8;
 }
+a {
+  text-decoration: none;
+}
 h1 {
   color: var(--background-basic);
 }
