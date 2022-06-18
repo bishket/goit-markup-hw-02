@@ -8,26 +8,24 @@
   --background-button: #f5f4fa;
   --button-hover-color: #188ce8;
 }
-a {
+.link {
   text-decoration: none;
+  color: var(--text-color);
 }
-h1 {
-  color: var(--background-basic);
+.list {
+  list-style: none;
 }
-button {
-  cursor: pointer;
-}
-.page {
+body {
   color: var(--text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  font-style: normal;
+  font-size: 14px;
+  background-color: var(--background-basic);
 }
 /* Логотип шапки и подвала */
 .logo {
   color: #000000;
   font-family: Raleway, cursive;
-  font-style: normal;
   font-size: 26px;
   line-height: 1.2;
 }
@@ -37,52 +35,43 @@ button {
 .color-logo-footer {
   color: var(--background-basic);
   font-family: Raleway, cursive;
-  font-style: normal;
   font-size: 26px;
   line-height: 1.2;
 }
-ul {
-  list-style: none;
-}
 /* навигация */
-.nav {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-}
-.nav .link.current {
+.nav-list .current {
   color: var(--accent-color);
 }
-.site-nav .link {
+.nav-link {
   color: var(--title-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link,
+.contacts-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-link:hover,
+.nav-link:hover,
+.contacts-link:focus,
+.nav-link:focus {
   color: var(--accent-color);
 }
-.contacts .link {
-  color: var(--text-color);
+
+.hero {
+  background: var(--background-secondary);
 }
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent-color);
-}
-.header {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
+.hero-title {
+  color: var(--background-basic);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: var(--background-secondary);
 }
-.header .button:hover,
-.header .button:focus {
+.hero .button:hover,
+.hero .button:focus {
   background: var(--button-hover-color);
 }
 .button {
@@ -98,26 +87,21 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.features-title,
 .features-subtitle {
   color: var(--title-color);
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-p {
-  font-size: 14px;
+.features-text {
   line-height: 1.7;
 }
 /* Чем мы занимаемся */
-.preview-title {
+.title {
   color: var(--title-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
+  color: var(--title-color);
 }
 /* Наша команда */
 .team {
@@ -126,24 +110,16 @@ p {
 .team-list {
   background: var(--background-basic);
 }
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
+
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-}
-.team-subtitle,
-.team-title {
   color: var(--title-color);
 }
-.team p {
-  font-weight: 400;
+
+.team-text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -155,13 +131,20 @@ p {
   font-size: 14px;
   line-height: 1.7;
 }
+.address .link {
+  color: var(--adress-color);
+}
 .address .address-nav {
   color: var(--background-basic);
 }
-.address .link {
-  color: var(--text-color);
+
+.address .link:hover,
+.address .link:focus,
+.address .address-nav:hover,
+.address .address-nav:focus {
+  color: var(--accent-color);
 }
-footer {
+.footer {
   background: var(--background-secondary);
 }
 /* страница портфолио */
@@ -188,9 +171,6 @@ footer {
 /* разделы портфолио*/
 .portfolio .portfolio-title {
   color: var(--title-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -198,10 +178,6 @@ footer {
 
 .portfolio .portfolio-text {
   color: var(--text-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
 }
