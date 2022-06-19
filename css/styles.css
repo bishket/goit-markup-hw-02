@@ -8,7 +8,8 @@
   --background-button: #f5f4fa;
   --button-hover-color: #188ce8;
 }
-.link {
+.link,
+.address-nav {
   text-decoration: none;
   color: var(--text-color);
 }
@@ -21,6 +22,19 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   background-color: var(--background-basic);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* Логотип шапки и подвала */
 .logo {
@@ -88,6 +102,7 @@ body {
 }
 
 .features-subtitle {
+  font-size: 14px;
   color: var(--title-color);
   line-height: 1.14;
   text-transform: uppercase;
@@ -139,9 +154,7 @@ body {
 }
 
 .address .link:hover,
-.address .link:focus,
-.address .address-nav:hover,
-.address .address-nav:focus {
+.address .link:focus {
   color: var(--accent-color);
 }
 .footer {
@@ -153,7 +166,7 @@ body {
 .filters .button {
   color: var(--title-color);
   background: var(--background-button);
-  font-family: Roboto, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -162,12 +175,14 @@ body {
   letter-spacing: 0.03em;
 }
 .filters .button:hover,
-.filters .button:focus,
-.filters .button:active {
+.filters .button:focus {
   color: var(--background-basic);
   background: var(--accent-color);
 }
-
+.filters .button.active {
+  color: var(--background-basic);
+  background: var(--accent-color);
+}
 /* разделы портфолио*/
 .portfolio .portfolio-title {
   color: var(--title-color);
